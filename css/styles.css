@@ -1,7 +1,7 @@
 .hidden {
     display: none;
 }
-/* Main Styles*/
+/* ========= Main Styles ==========*/
 
 body {
     font-family: "Roboto", sans-serif;
@@ -9,7 +9,7 @@ body {
     background-color: #fff;
 }
 
-/* Reset*/
+/*=========== Reset ===========*/
 a {
     text-decoration: none;
 }
@@ -24,6 +24,10 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.button {
+    cursor: pointer;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -43,7 +47,7 @@ h1,h2,h3,h4,h5,h6,p {
     overflow: hidden;     
 }
 
-/* Common*/
+/* ========= Common =============*/
 .container {
     max-width: 320px;
     padding: 0 16px;
@@ -63,7 +67,7 @@ h1,h2,h3,h4,h5,h6,p {
     }
 }
 
-/* Header*/
+/*========== Header ============*/
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -71,4 +75,59 @@ h1,h2,h3,h4,h5,h6,p {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
     }
 
-.header-container: 
+.header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}   
+
+.nav-list, .contacts {
+    display: none;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif; 
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 1.17; 
+    letter-spacing: 0.03em; 
+    text-transform: uppercase; 
+    color: #4d5ae5; 
+}
+
+.header-logo {
+    padding: 16px 0;
+    display: block;
+}
+
+.header-logo .logo-part {
+    color: #2e2f42;
+}
+
+.burger-btn {
+    padding: 0;
+    border: none;
+    background-color: none;
+}
+
+.burger-icon {
+    display: block;
+    fill: #2f2f37;
+}
+
+@media screen and (min-width: 768px) {
+    .burger-btn {
+        display: none;
+    } 
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    }
+
+.contacts {
+    font-style: normal;
+    display: block;
+}

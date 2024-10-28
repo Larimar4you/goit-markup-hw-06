@@ -17,37 +17,78 @@
             
             <link rel="stylesheet" href="./css/styles.css"/>
 </head>
-
+<!-- ======= HEADER ======= -->
 <body>
     <header class="header">
-        <div class="container header-box">
-            <nav class="nav">
-                    <a class="logo" href="./index.html" 
-                    >Web<span class="logo-header">Studio</span>
+        <div class="container header-container">
+            <nav class="header-nav">
+                    <a class="logo header-logo" href="./index.html" 
+                    >Web<span class="logo-part">Studio</span>
                     </a> 
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a class="nav-link current"
+                    <li class="nav-item"><a class="nav-link current"
                     href="./index.html">Studio</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="">Portfolio</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
                 </ul>
             </nav>
-    
-            <address class="address">
-                <ul class="address-list">
-                    <li class="address-link">
-                        <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+<!-- ======= ADDRESS ======= -->
+            <address class="contacts">
+                <ul class="contscts-list">
+                    <li class="contacts-item">
+                        <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li>
-                        <a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11 </a> 
+                    <li class="contacts-item">
+                        <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11 </a> 
                     </li>
                 </ul>
             </address>
+
+            <button class="burger-btn" type="button"></button>
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-menu"></use>
+            </svg>
+        </div>
+
+        <div class="mobile-menu">
+            <button type="button" class="mobile-close-btn">
+                <svg class="close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-mobile-close-btn"></use>
+                </svg>             
+            </button>
+            <nav class="nav">
+                <ul clas="mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <a class="menu-link menu-first-link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="menu-link" href="">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="menu-link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <address class="mobile-address">
+                <ul class="mobile-address-list">
+                    <li class="address-list-item">
+                        <a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="address-list-item">
+                        <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a> 
+                    </li>
+                </ul>
+            </address>
+
+            <ul class="social-links-list">
+
+            </ul>
         </div>
     </header>
     
     <main>
-        <!--Hero-->
+<!-- ======= HERO ======= -->
         <section class="hidden">
         <div class="container hero-content">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -379,7 +420,7 @@
         </div> 
         </section>
     </main>
-
+<!-- ======= FOOTER ======= -->
     <footer class="hidden">
         <div class="container footer-position">
         <div class="footer-info">
@@ -445,7 +486,7 @@
         </div>
         </div>
     </footer>
-    
+<!-- ======= MODAL ======= -->
         <div class="modal-overlay is-open">   
         <div class="hidden">
             <button type="button" class="button-close">
