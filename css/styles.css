@@ -81,7 +81,8 @@ h1,h2,h3,h4,h5,h6,p {
     justify-content: space-between;
 }   
 
-.nav-list, .contacts {
+.nav-list, 
+.contacts {
     display: none;
 }
 
@@ -107,7 +108,7 @@ h1,h2,h3,h4,h5,h6,p {
 .burger-btn {
     padding: 0;
     border: none;
-    background-color: none;
+    background-color: transparent;
 }
 
 .burger-icon {
@@ -117,17 +118,81 @@ h1,h2,h3,h4,h5,h6,p {
 
 @media screen and (min-width: 768px) {
     .burger-btn {
-        display: none;
-    } 
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+        display: none !important;
+    }
+    
+    .header-nav {
+        display: flex;
+        align-items: center;
     }
 
-.contacts {
-    font-style: normal;
-    display: block;
+    .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header-logo {
+        padding: 25px 0;
+        margin-right: 120px;
+    }
+    .nav-link {
+        display: block;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding: 24px 0;
+        transition: color 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        
+        .nav-link.current {
+        position: relative;
+    }
+        
+        .nav-link.current::after {
+        content:"";
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+    }
+        .nav-link:hover, 
+        .nav-link:focus, 
+        .nav-link.current,
+        .address-link:hover,
+        .address-link:focus { 
+        color: #404bbf; 
+    } 
+        
+    .contacts {
+        font-style: normal;
+        display: block;
+    }
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .contacts-link {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #434455;
+        transition: color 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
+
+
+
+
+
+.mobile-menu {
+    display: none;
+}    
