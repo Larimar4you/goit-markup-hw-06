@@ -268,7 +268,38 @@ pointer-events: auto;
     background-color: transparent;
 }
 
+.mobile-menu-nav {
+    margin-bottom:auto;
+}
 
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 40px;
+    padding: 16px 24px;
+}
+
+.social-links-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    list-style-type: none; 
+}
+
+.social-links-list-item {
+    margin: 8px;
+
+}
+
+.footer-soc-link {
+
+}
 
 
 @media screen and (min-width: 768px) {
