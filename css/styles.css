@@ -277,6 +277,8 @@ pointer-events: auto;
     flex-direction: column;
     gap: 40px;
 }
+
+
 .social-links {
     display: flex;
     justify-content: center;
