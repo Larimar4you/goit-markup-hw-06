@@ -253,7 +253,7 @@ pointer-events: auto;
     height: 100%;
 }
 
-.mobile-menu.close {
+.mobile-menu-close {
     position: absolute;
     top: 24px;
     right: 24px;
