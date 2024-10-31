@@ -36,31 +36,7 @@ margin: 0 auto;
 /* Header*/
 
 
-.header-container { 
-flex-direction: row; 
-width: 1158px; 
-padding: 0 15px; 
-}
 
-.header-logo {
-margin-right: 76px;
-}
-
-
-.contacts-list {
-display: flex;
-align-items: center;
-gap: 40px;
-}
-
-.contacts-link {
-display: block;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-transition: color 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 /* Hero Section*/
 .hero { 
