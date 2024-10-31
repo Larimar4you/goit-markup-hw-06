@@ -98,7 +98,6 @@ h1,h2,h3,h4,h5,h6,p {
 
 .header-logo {
     padding: 16px 0;
-    display: block;
 }
 
 .header-logo .logo-part {
@@ -250,3 +249,28 @@ opacity: 1;
 visibility: visible;
 pointer-events: auto;
 }
+
+.mobile-menu-container {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mobile-menu.close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    fill: #2e2f42;
+    border: 1px solid #e7e9fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
