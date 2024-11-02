@@ -504,3 +504,8 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
+@media screen and (min-width:767px) {
+    .item-profit:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}
