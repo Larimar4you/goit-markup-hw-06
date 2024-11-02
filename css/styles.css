@@ -477,7 +477,7 @@ background-color: #404bbf;
     }
 }
 
-/*PROFIT*/
+/*FEATURES*/
 .visually-hidden {
     position: absolute;
     opacity: 0;
@@ -486,11 +486,11 @@ background-color: #404bbf;
     width: 0;
     }
     
-.profit {
+.features {
     padding: 96px 0;
 }
 
-.profit-icons {
+.features-icons {
     display: none;
 }
 
@@ -519,12 +519,12 @@ color: #434455;
 }
 
 @media screen and (min-width:768px) {
-    .list-profit {
+    .features-list {
         display: flex;
         flex-wrap: wrap;
         gap: 72px 24px;
     }
-    .profit-item {
+    .features-item {
         width: calc((100%-24px) / 2);
     }
 .section-header-item {
@@ -533,10 +533,10 @@ color: #434455;
 }
 
 @media screen and (min-width:1158px) {
-    .profit {
+    .features {
         padding: 120px 0;
     }
-    .profit-icons {
+    .features-icons {
         border: 1px solid #8e8f99;
         border-radius: 4px;
         width: 264px;
@@ -547,7 +547,7 @@ color: #434455;
         justify-content: center;
         align-items: center;
     }
-    .list-profit {
+    .features-list {
         flex-wrap: nowrap;
     }
     .profit-item {
