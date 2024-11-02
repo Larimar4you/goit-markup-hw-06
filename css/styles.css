@@ -556,8 +556,8 @@ color: #434455;
     .section-header-item {
         font-weight: 500;
         font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
+    }
+    .section-text {
+        font-weight: 400;
     }
 }
