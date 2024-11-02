@@ -510,3 +510,12 @@ color: #434455;
     }
 }
 
+@media screen and (min-width:768px) {
+    .list-profit {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .profit-item {
+        width: calc((100%-24px) / 2);
+    }
