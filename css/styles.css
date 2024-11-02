@@ -490,7 +490,7 @@ background-color: #404bbf;
     padding: 96px 0;
 }
 
-.features-icons {
+.features-icon {
     display: none;
 }
 
@@ -550,7 +550,7 @@ color: #434455;
     .features-list {
         flex-wrap: nowrap;
     }
-    .profit-item {
+    .features-item {
         width: calc(((100% - 72px)/ 4));
     }
     .section-header-item {
