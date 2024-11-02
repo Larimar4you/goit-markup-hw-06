@@ -366,7 +366,8 @@ fill: #4d5ae5;
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
-}  
+} 
+}
 
 /*HEROI*/
 
@@ -477,11 +478,29 @@ background-color: #404bbf;
 }
 
 /*PROFIT*/
-.features {
+.profit {
     padding: 96px 0;
 }
 
-.features-icon {
+.profit-icons {
     display: none;
+}
+
+.section-header-item {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.section-text {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
 }
 
