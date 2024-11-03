@@ -960,5 +960,18 @@ team-card-soc-item {
     .footer-logo {
         text-align: start;
     }
+    .footer-container {
+        display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: row; 
+    }
+    .hero-btn {
+        margin-left: 0px;
+    }
+    .modal-overlay is-open {
+        visibility: visible;
+        opacity: 1; 
+        pointer-events: auto; 
+    }
     
 }
