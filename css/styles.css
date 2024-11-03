@@ -574,7 +574,16 @@ color: #434455;
     flex-direction: row; 
 }
 
-
+.title-team {     
+    color: #2e2f42; 
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: 700; 
+    line-height: 1.11; 
+    text-transform: capitalize; 
+    letter-spacing: 0.02em; 
+    margin-bottom: 72px;
+    }
 .our-team {
     padding: 96px 0; 
 }
