@@ -490,7 +490,7 @@ background-color: #404bbf;
     padding: 96px 0;
 }
 
-.features-icons {
+.features-icon {
     display: none;
 }
 
@@ -503,6 +503,9 @@ background-color: #404bbf;
     color: #2e2f42;
     margin-bottom: 8px;
 }
+.section-header-item {
+    text-align: left;
+}
 
 .section-text {
 font-weight: 500;
@@ -512,7 +515,8 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
-@media screen and (min-width:767px) {
+@media screen and (max-width:767px) {
+    
     .features-item:not(:last-child) {
         margin-bottom: 72px;
     }
@@ -525,11 +529,9 @@ color: #434455;
         gap: 72px 24px;
     }
     .features-item {
-        width: calc((100%-24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
-.section-header-item {
-    text-align: left;
-    }
+
 }
 
 @media screen and (min-width:1158px) {
@@ -906,20 +908,6 @@ color: #434455;
     display: flex; 
 }
 
-.container-soc { 
-    display: flex; 
-    font-family: 'Raleway', sans-serif; 
-    font-weight: 700; 
-    font-size: 18px; 
-    line-height: 1.17; 
-    letter-spacing: 0.03em; 
-    text-transform: uppercase; 
-    color: #4d5ae5; 
-    margin-bottom: 16px; 
-    margin-left: 156px; 
-    flex-direction: row; 
-} 
-
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: #31d0aa; 
@@ -929,13 +917,11 @@ color: #434455;
     fill: #f4f4fd;    
 }
 
-.input-label {
-    border: 1px solid #fff; 
+.input-label { 
     border-radius: 4px; 
     width: 288px; 
     height: 40px; 
-    background-color: #2e2f42; 
-    padding-left: 16px; 
+    background-color: #2e2f42;  
     background-color: transparent; 
     font-size: 12px; 
     line-height: 2; 
@@ -985,7 +971,6 @@ color: #434455;
     min-width: 165px;
     height: 40px;
     background: #4d5ae5;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -1013,7 +998,7 @@ color: #434455;
         display: flex;
         align-items: flex-start;
         gap: 72px 24px;
-        justify-content: center;
+        justify-content: flex-start;
     
         flex-direction: row;
         text-align: left;
