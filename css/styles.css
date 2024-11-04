@@ -842,8 +842,9 @@ color: #434455;
     line-height: 1.5; 
     letter-spacing: 0.02em; 
     color: #f4f4fd; 
-    max-width: 288px; 
+    
 }
+
 .logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -899,6 +900,7 @@ color: #434455;
     display: block; 
     color: #fff;; 
     max-width: 288px; 
+    text-align: start;
 }                  
 
 .footer-soc-links-list {
@@ -1001,6 +1003,7 @@ color: #434455;
     text-align: center;
     color: #fff;
     cursor: pointer;
+    margin-top: 16px;
     }
             
     .subscribe-icon {
@@ -1051,6 +1054,7 @@ color: #434455;
     
     .footer-info { 
         max-width: 264px;
+        align-items: flex-start;
     } 
     .footer {
         background-color: #2e2f42; 
