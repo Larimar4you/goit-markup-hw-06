@@ -1043,15 +1043,18 @@ color: #434455;
 
 @media screen and (min-width:768px) {
     .footer-position {
+        width: 584px;
         margin: 0 auto;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 72px 24px;
-        justify-content: flex-start;
-        flex-direction: wrap;
+        justify-content: center;
+    
         flex-direction: row;
+        text-align: left;
     }
     
+
     .footer-info { 
         max-width: 264px;
         align-items: flex-start;
@@ -1069,8 +1072,16 @@ color: #434455;
         flex-wrap: wrap; 
         flex-direction: row; 
     }
-    .hero-btn {
-        margin-left: 0px;
+    .soc-media-text {
+        text-align: left;
+    }
+    .subscribe-text {
+        text-align: left;
+    }
+    .subscribe-box {
+        display: flex;
+        gap: 24px;
+    }
     }
     .modal-overlay is-open {
         visibility: visible;
