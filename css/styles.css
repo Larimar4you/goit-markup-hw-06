@@ -1078,11 +1078,12 @@ color: #434455;
     .subscribe-text {
         text-align: left;
     }
-  
-    }
     .subscribe-form {
         display: flex;
         gap: 24px;
+    }
+    .subscribe-button {
+
     }
     
     .modal-overlay is-open {
@@ -1093,21 +1094,8 @@ color: #434455;
     
 
     @media screen and (min-width:1158px) {
-        .footer {
-            padding: 100px 0;
-        }
         .footer-position {
-        gap: unset;
-        }
-        .footer-info {
-            margin-right: 120px;
-        }
-        .footer-soc-media {
-            margin-right: 80px; 
-        }
-        .subscribe-form {
-            display: flex;
-            gap: 24px;
+            max-width: 1158px;
+            gap: unset;
         }
     }
-
