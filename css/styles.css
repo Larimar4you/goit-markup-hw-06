@@ -835,16 +835,6 @@ color: #434455;
     text-align: center;
 }
 
-
-.footer-text {
-    font-weight: 400; 
-    font-size: 16px; 
-    line-height: 1.5; 
-    letter-spacing: 0.02em; 
-    color: #f4f4fd; 
-    
-}
-
 .logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -914,7 +904,6 @@ color: #434455;
     width: 40px; 
     height: 40px; 
     display: flex; 
-    flex-direction: row; 
 }
 
 .container-soc { 
@@ -927,7 +916,7 @@ color: #434455;
     text-transform: uppercase; 
     color: #4d5ae5; 
     margin-bottom: 16px; 
-    margin-left: 156 px; 
+    margin-left: 156px; 
     flex-direction: row; 
 } 
 
@@ -940,7 +929,7 @@ color: #434455;
     fill: #f4f4fd;    
 }
 
-.input-lable {
+.input-label {
     border: 1px solid #fff; 
     border-radius: 4px; 
     width: 288px; 
