@@ -1035,10 +1035,10 @@ color: #434455;
     background-color: #404bbf;
 }  
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:767px) { 
     .subscribe-button {
-    padding: 16px auto;
-    }  
+        margin: 16px auto 0 auto;
+        }
 }
 
 @media screen and (min-width:768px) {
@@ -1054,7 +1054,6 @@ color: #434455;
         text-align: left;
     }
     
-
     .footer-info { 
         max-width: 264px;
         align-items: flex-start;
@@ -1082,20 +1081,32 @@ color: #434455;
         display: flex;
         gap: 24px;
     }
-    .subscribe-button {
-
-    }
     
     .modal-overlay is-open {
         visibility: visible;
         opacity: 1; 
         pointer-events: auto; 
     }
+}
+
     
 
     @media screen and (min-width:1158px) {
+        .footer {
+            padding: 100px 0;
+        }
         .footer-position {
             max-width: 1158px;
             gap: unset;
+        }
+        .footer-info {
+            margin-right: 120px;
+        }
+        .footer-soc-media {
+            margin-right: 80px; 
+        }
+        .subscribe-form {
+            display: flex;
+            gap: 24px;
         }
     }
