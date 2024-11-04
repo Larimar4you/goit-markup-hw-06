@@ -536,7 +536,7 @@ color: #434455;
     .features {
         padding: 120px 0;
     }
-    .features-icons {
+    .features-icon {
         border: 1px solid #8e8f99;
         border-radius: 4px;
         width: 264px;
@@ -984,6 +984,7 @@ color: #434455;
     letter-spacing: 0.04em;
     color: #fff;
     }
+
     .subscribe-button {
     border-style: none;
     display: flex;
@@ -1010,11 +1011,7 @@ color: #434455;
     margin-left: 16px;
     }
 
-.subscribe-button:focus {
-    background-color: #404bbf;
-}  
-
-@media screen and (min-width:767px) { 
+@media screen and (max-width:767px) { 
     .subscribe-button {
         margin: 16px auto 0 auto;
         }
@@ -1059,6 +1056,9 @@ color: #434455;
     .subscribe-form {
         display: flex;
         gap: 24px;
+    }
+    .subscribe-box {
+    max-width: 453px;
     }
 }
 
