@@ -1033,6 +1033,12 @@ color: #434455;
 
 .footer-btn:focus {
     background-color: #404bbf;
+}  
+
+@media screen and (min-width:767px) {
+    .subscribe-button {
+    padding: 16px 0;
+    }  
 }
 
 @media screen and (min-width:768px) {
