@@ -1081,20 +1081,9 @@ color: #434455;
         display: flex;
         gap: 24px;
     }
-    
-    .modal-overlay is-open {
-        visibility: visible;
-        opacity: 1; 
-        pointer-events: auto; 
-    }
 }
 
-    
-
     @media screen and (min-width:1158px) {
-        .footer {
-            padding: 100px 0;
-        }
         .footer-position {
             max-width: 1158px;
             gap: unset;
