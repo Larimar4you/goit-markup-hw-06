@@ -993,7 +993,7 @@ color: #434455;
 
 @media screen and (min-width:768px) {
     .footer-position {
-        width: 584px;
+        max-width: 584px;
         margin: 0 auto;
         display: flex;
         align-items: flex-start;
@@ -1040,5 +1040,11 @@ color: #434455;
         .footer-position {
             max-width: 1158px;
             gap: unset;
+        }
+        footer-info {
+            margin-right: 120px;
+        }
+        .footer-soc-media {
+            margin-right: 80px;
         }
     }
