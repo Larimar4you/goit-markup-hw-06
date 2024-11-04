@@ -843,6 +843,7 @@ color: #434455;
     letter-spacing: 0.02em; 
     color: #f4f4fd; 
     max-width: 288px; 
+    visibility: hidden;
 }
 .logo {
     display: inline-block;
@@ -852,6 +853,19 @@ color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
     
+}
+
+.footer-link {
+    color: #4d5ae5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-top: 96px;
+}
+
+.footer-logo {
+    color: #f4f4fd;
 }
 .footer-soc-link {
     background-color: #4d5ae5;
@@ -948,6 +962,7 @@ color: #434455;
     color: #fff;
     margin-bottom: 16px;
     }
+
 
 .subscribe-email {
     border: 1px solid #fff;
@@ -1070,4 +1085,9 @@ color: #434455;
         .footer-soc-media {
             margin-right: 80px; 
         }
+        .subscribe-form {
+            display: flex;
+            gap: 24px;
+        }
     }
+
