@@ -1078,17 +1078,19 @@ color: #434455;
     .subscribe-text {
         text-align: left;
     }
-    .subscribe-box {
+  
+    }
+    .subscribe-form {
         display: flex;
         gap: 24px;
     }
-    }
+    
     .modal-overlay is-open {
         visibility: visible;
         opacity: 1; 
         pointer-events: auto; 
     }
-    }
+    
 
     @media screen and (min-width:1158px) {
         .footer {
