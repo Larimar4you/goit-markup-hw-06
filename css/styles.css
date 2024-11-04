@@ -1099,14 +1099,4 @@ color: #434455;
             max-width: 1158px;
             gap: unset;
         }
-        .footer-info {
-            margin-right: 120px;
-        }
-        .footer-soc-media {
-            margin-right: 80px; 
-        }
-        .subscribe-form {
-            display: flex;
-            gap: 24px;
-        }
     }
