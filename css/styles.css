@@ -98,6 +98,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .header-logo {
     padding: 16px 0;
+    display: block;
 }
 
 .header-logo .logo-part {
@@ -180,7 +181,8 @@ h1,h2,h3,h4,h5,h6,p {
     .contacts-list {
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 12px;
+        flex-direction: column;
     }
     .contacts-link {
         display: block;
@@ -206,7 +208,6 @@ h1,h2,h3,h4,h5,h6,p {
         margin-right: 76px;
     }
     .contacts-list {
-        display: block;
         align-items: center;
         gap: 40px;
         flex-direction: row;
@@ -266,11 +267,12 @@ pointer-events: auto;
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    padding: 0;
 }
 
 .close-icon {
-width: 24px;
-height: 24px;
+width: 8px;
+height: 8px;
 fill: #2e2f42;
 }
 
@@ -283,10 +285,6 @@ fill: #2e2f42;
     display: flex;
     flex-direction: column;
     gap: 40px;
-}
-
-.mobile-menu-item {
-margin-bottom: 40px;
 }
 
 .menu-link {
@@ -305,17 +303,13 @@ margin-bottom: 40px;
 /* CNТИЛИ ДЛЯ КОНТАКТНОЙ ИНФОРМАЦИИ */
 .mobile-address {
 margin-top: 24px;
-text-align: center;
+font-style: normal;
 }
 
 .mobile-address-link {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.address-list-item {
-margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .address-link {
@@ -338,29 +332,22 @@ margin: 10px 0;
 
 .social-links-list {
     display: flex;
-    justify-content: space-around;
     gap: 40px;
     list-style-type: none; 
+    margin-top: 48px;
 }
 
 .social-links-list-item {
-    margin: 8px;
+    width: 40px;
+    height: 40px;
 }
 
 .footer-soc-link {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+    display: flex;
 }
 
 .icon {
-    width: 100%;
-    height: 100%;
-    fill: #4d5ae5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-soc-link:hover .icon {
-fill: #4d5ae5;
+    fill:#f4f4fd;
 }
 
 @media screen and (min-width: 768px) {
@@ -372,24 +359,10 @@ fill: #4d5ae5;
 /*HEROI*/
 
 .page-hero {
-    background-color: #2E2F42;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color:#2E2F42; 
-    color: #fff; 
-    background-image: linear-gradient(
-    to bottom, rgba(46,47,66,0.7), rgba(46,47,66,0.7)
-),
-url(../images/hero-img.jpg);
-}
-
-
-.page-hero {
     display: flex;
     background-color: #2e2f42; 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/Dark-bg-min.jpg); 
+    url(../images/hero/hero-mob.jpg); 
     max-width: 320px; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -397,10 +370,14 @@ url(../images/hero-img.jpg);
     text-align: center; 
     padding: 72px 0; 
     margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/img-bg.jpg); 
 }
-    
+
+@media screen and (min-resolution: 192dpi){
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/hero-mob@2x.jpg)
+    }
+}
 .order-service-button {
     background-color: #4D5AE5; 
     font-weight: 500; 
@@ -451,8 +428,15 @@ background-color: #404bbf;
         max-width: 768px; 
         padding: 112px 0; 
         margin-bottom: 96px; 
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/hero-tab.jpg); 
 }
-
+@media screen and (min-resolution: 192dpi){
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/hero-tab@2x.jpg)
+    }
+}
 .hero-title {
     font-weight: 700; 
     font-size: 56px; 
@@ -565,7 +549,7 @@ color: #434455;
 }
 
 /*OUR TEAM*/
-.container {
+.team-container {
     margin: 0 auto; 
     display: flex; 
     align-items: center; 
@@ -635,6 +619,10 @@ color: #434455;
     letter-spacing: 0.02em; 
     text-align: center; 
     color: #434455; 
+}
+.portfolio .section-text,
+.portfolio .section-header-item { 
+    text-align: left;
 }
 
 .team-card-soc-links {
@@ -837,17 +825,9 @@ color: #434455;
     text-align: center;
 }
 
-.logo {
+.footer-link {
     display: inline-block;
     margin-bottom: 16px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    
-}
-
-.footer-link {
     color: #4d5ae5;
     font-weight: 400;
     font-size: 16px;
@@ -1041,7 +1021,7 @@ color: #434455;
             max-width: 1158px;
             gap: unset;
         }
-        footer-info {
+        .footer-info {
             margin-right: 120px;
         }
         .footer-soc-media {
@@ -1114,7 +1094,7 @@ color: #434455;
 
 .modal { 
     border-radius: 4px; 
-    width: 408px; 
+    width: 288px; 
     min-height: 584px; 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 
     0 2px 1px 0 rgba(0, 0, 0, 0.2); 
@@ -1123,7 +1103,7 @@ color: #434455;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    padding: 72px 24px 24px 24px; 
+    padding: 72px 16px 24px 16px; 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     } 
 
@@ -1272,12 +1252,15 @@ color: #434455;
 .modal-terms-check { 
     font-family: "Roboto", sans-serif; 
     font-size: 12px; 
-        letter-spacing: 0.04em;  
+    letter-spacing: 0.04em;  
     color: #8e8f99; 
     gap: 8px; 
+    display: flex;
+    align-items: center;
 } 
 
-.modal-terms-check span { 
+.modal-terms-check .span-check { 
+    flex-shrink: 0;
     width: 16px; 
     height: 16px; 
     border-radius: 2px; 
@@ -1286,11 +1269,11 @@ color: #434455;
     justify-content: center; 
     align-items: center; 
     fill: transparent; 
-    margin-right: 8px; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 } 
+
 
 .check {  
     width: 8px; 
@@ -1338,8 +1321,12 @@ color: #434455;
 } 
 
 
-
-
+@media screen and (min-width:768px) {
+    .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    } 
+}
 
 
 
