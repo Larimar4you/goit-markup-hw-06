@@ -362,7 +362,7 @@ font-style: normal;
     display: flex;
     background-color: #2e2f42; 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/hero/hero-mob.jpg); 
+    url(../images/hero-img/hero-mob.jpg); 
     max-width: 320px; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -375,7 +375,7 @@ font-style: normal;
 @media screen and (min-resolution: 192dpi){
     .page-hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(../images/hero/hero-mob@2x.jpg)
+        url(../images/hero-img/hero-mob@2x.jpg)
     }
 }
 .order-service-button {
@@ -429,12 +429,12 @@ background-color: #404bbf;
         padding: 112px 0; 
         margin-bottom: 96px; 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(../images/hero/hero-tab.jpg); 
+        url(../images/hero-img/hero-tab.jpg); 
 }
 @media screen and (min-resolution: 192dpi){
     .page-hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(../images/hero/hero-tab@2x.jpg)
+        url(../images/hero-img/hero-tab@2x.jpg)
     }
 }
 .hero-title {
@@ -452,7 +452,13 @@ background-color: #404bbf;
         max-width: 1440px; 
         padding: 188px 0; 
         margin-bottom: 48px; 
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero-img/hero-desk.jpg); 
     }
+    @media screen and (min-resolution: 192dpi){
+        .page-hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+            url(../images/hero-img/hero-desk@2x.jpg)
     hero-title {
         font-size: 56px; 
         line-height: 1.07143; 
