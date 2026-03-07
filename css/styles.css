@@ -3,10 +3,11 @@
 .hidden {
   display: none;
 }
+
 /* ========= Main Styles ==========*/
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -98,7 +99,7 @@ img {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -168,7 +169,7 @@ img {
   }
 
   .nav-link.current::after {
-    content: '';
+    content: "";
     width: 100%;
     position: absolute;
     left: 0;
@@ -235,7 +236,7 @@ img {
   }
 }
 
-/* MOBILE MENU*/
+/* MOBILE MENU */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -290,7 +291,7 @@ img {
   fill: #2e2f42;
 }
 
-/* CТИЛI ДО НАВIГАЦIOННОГО МЕНЮ */
+/* STYLES FOR NAVIGATION MENU */
 .mobile-menu-nav {
   margin-bottom: auto;
 }
@@ -314,7 +315,7 @@ img {
   color: #404bbf;
 }
 
-/* CNТИЛИ ДЛЯ КОНТАКТНОЙ ИНФОРМАЦИИ */
+/* STYLES FOR CONTACT INFORMATION */
 .mobile-address {
   margin-top: 24px;
   font-style: normal;
@@ -335,7 +336,7 @@ img {
   color: #434455;
 }
 
-/* СТИЛИ ДЛЯ ИКОНОК СОЦ СЕТЕЙ */
+/* STYLES FOR SOCIAL MEDIA ICONS */
 .social-links {
   display: flex;
   justify-content: center;
@@ -364,20 +365,12 @@ img {
   fill: #f4f4fd;
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-
-/*HEROI*/
+/* HERO */
 
 .page-hero {
   display: flex;
   background-color: #2e2f42;
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-img/hero-mob.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-mob.jpg);
   max-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
@@ -390,10 +383,10 @@ img {
 @media screen and (min-resolution: 192dpi) {
   .page-hero {
     background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-img/hero-mob@2x.jpg);
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-mob@2x.jpg);
   }
 }
+
 .order-service-button {
   background-color: #4d5ae5;
   font-weight: 500;
@@ -445,21 +438,20 @@ button:focus {
     padding: 112px 0;
     margin-bottom: 96px;
     background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-img/hero-tab.jpg);
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-tab.jpg);
   }
+
   @media screen and (min-resolution: 192dpi) {
     .page-hero {
       background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero-img/hero-tab@2x.jpg);
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-tab@2x.jpg);
     }
   }
+
   .hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-
     max-width: 496px;
     margin-bottom: 36px;
   }
@@ -471,17 +463,16 @@ button:focus {
     padding: 188px 0;
     margin-bottom: 48px;
     background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-img/hero-desk.jpg);
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-desk.jpg);
   }
 }
 
 @media screen and (min-resolution: 192dpi) {
   .page-hero {
     background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-img/hero-desk@2x.jpg);
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-desk@2x.jpg);
   }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07143;
@@ -489,8 +480,8 @@ button:focus {
     margin-bottom: 48px;
   }
 }
+/* FEATURES */
 
-/*FEATURES*/
 .visually-hidden {
   position: absolute;
   opacity: 0;
@@ -532,6 +523,7 @@ button:focus {
 .features .section-text {
   text-align: left;
 }
+
 @media screen and (max-width: 767px) {
   .features-item:not(:last-child) {
     margin-bottom: 72px;
@@ -588,8 +580,8 @@ button:focus {
     font-weight: 400;
   }
 }
+/* OUR TEAM */
 
-/*OUR TEAM*/
 .team-container {
   margin: 0 auto;
   align-items: center;
@@ -609,6 +601,7 @@ button:focus {
   letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
+
 .our-team {
   padding: 96px 0;
   background-color: #f4f4fd;
@@ -661,6 +654,7 @@ button:focus {
   text-align: center;
   color: #434455;
 }
+
 .portfolio .section-text,
 .portfolio .section-header-item {
   text-align: left;
@@ -722,6 +716,7 @@ button:focus {
     gap: 24px;
     margin-top: 72px;
   }
+
   .team-card-soc-links {
     display: flex;
     justify-content: center;
@@ -1092,7 +1087,7 @@ button:focus {
 }
 
 .modal-subscribe::placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 200%;
@@ -1101,7 +1096,7 @@ button:focus {
 }
 
 .subscribe-email .placeholder {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 200%;
@@ -1217,7 +1212,7 @@ button:focus {
 .form-label {
   display: block;
   margin-bottom: 4px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -1295,7 +1290,7 @@ button:focus {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99;
@@ -1341,7 +1336,7 @@ button:focus {
   border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
